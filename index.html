@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>segunda aplicacion</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript -->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script> -->
+  
+ 
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+
+  <body onLoad="MM_preloadImages('imagenes/telefono2.jpg','imagenes/telefono4.jpg','imagenes/telefono10.jpg','imagenes/telefono11.jpg','imagenes/telefono12.jpg')">
+  
+    <div data-role="page" id="principal" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+        <h1>TELEFONIA CELULAR EN MEXICO</h1>
+      </div>
+        <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+          <h1>TELEFONO CELULAR</h1>
+            <div>
+              <p>Ejemplo de un telefono celular:</p>
+              <br>
+            </div>
+            <div>
+              <img src="imagenes/telefono1.jpg" width="30%" height="30%">
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>DEFINICION</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>HISTORIA</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>CLASIFICACION</h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>COMPAÑIAS  </h2>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>TELEFONOS DEL FUTURO</h2>
+            </a>
+          </li>
+          </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+          <div>
+            <img src="imagenes/logo.png" width="46" height="46">
+          </div>
+          <div>
+            <h4>Aplicacion dos</h4>
+            <h4>Uriel Mendoza Amador</h4>
+          </div>
+        </div>
+  </div>
+  <div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+            <h1>DEFINICION</h1>
+              <p>
+                 La telefonía móvil o telefonía celular es un medio de comunicación inalámbrico a través de ondas electromagnéticas. Como cliente de este tipo de redes, se utiliza un dispositivo denominado teléfono móvil o teléfono celular. En la mayor parte de Hispanoamérica se prefiere la denominación teléfono celular o simplemente celular, aunque en Cuba se dice de ambas formas, y mientras que en España es más común el término teléfono móvil o simplemente móvil.
+              </p>
+          </div>
+          <div data-role="content" align="center">
+            <div>
+              <div data-role="collapsible" data-content-theme="false">
+          <h1>Telefono Celular  1</h1>
+            <div>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust3','','imagenes/telefono10.jpg',1)"><img src="imagenes/telefono2.jpg" width="310" height="310" id="sust3"></a>
+               </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+          <h1>Telefono Celular  2</h1>
+            <div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust2','','imagenes/telefono4.jpg',1)"><img src="imagenes/telefono3.png" width="310" height="300" id="sust2"></a> 
+            </div>
+          </div>
+        </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion DOS UMA</h4>
+        </div>
+    </div>
+  </div>
+  <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+            <h1>HISTORIA</h1>
+            <p>
+              El teléfono móvil o teléfono celular es un aparato indispensable en la actualidad; sin embargo su popularización ha sido un fenómeno muy reciente. En un principio el teléfono móvil solo podía ser usado en vehículos por su tamaño, reduciéndose posteriormente a una unidad portátil, y finalmente al tamaño de bolsillo que utilizamos hoy. Pero el teléfono en sí es solo una pequeña parte de un sistema de telefonía mayor.
+
+El sistema celular fue creado para satisfacer la demanda de comunicación móvil dentro de un espectro de radiofrecuencia limitado. Esta limitación es el factor original que motivó y sigue motivando el desarrollo del teléfono móvil, frente a otros de los varios factores como la duración de la batería o el tamaño del aparato. El sistema debe acomodar miles de usuarios dentro de un espectro reducido para transmitir cada vez más información. La transmisión de voz, pero actualmente también la demanda de imágenes, vídeos y acceso a internet, continúan aumentando los requisitos del sistema.
+La radio surgió como una alternativa a la comunicación por cable a finales del s. XIX. En un primer momento fue utilizada para comunicación marítima, pero a partir de la década del 1920 comenzaron los intentos de aplicarla también a la comunicación móvil en tierra. En 1923, el cuerpo de policía de Victoria, Australia, fue el primero en utilizar comunicación inalámbrica dúplex en coches, poniendo fin a la práctica de dar reportes policiales en las cabinas de teléfono públicas.1 Estos teléfonos móviles primitivos permanecieron restringidos al uso gubernamental hasta los años 40, cuando se extendió al público general 
+            </p>
+          </div>
+          <div data-role="content" align="center">
+            <div>
+              <div data-role="collapsible" data-content-theme="false">
+                  <h1>Celular1</h1>
+                    <div>
+                  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust4','','imagenes/telefono11.jpg',1)"><img src="imagenes/telefono9.jpg" width="310" height="310" id="sust4"></a> 
+                  </div>
+                 </div>
+                 <div data-role="collapsible" data-content-theme="false">
+                    <h1>Celular2</h1>
+                      <div> 
+                      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust5','','imagenes/telefono12.jpg',1)"><img src="imagenes/telefono13.jpg" width="310" height="310" id="sust5"></a>                     </div>
+                 </div>
+            </div>
+             <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>Aplicacion DOS UMA</h4>
+          </div>
+        </div>
+  </div>
+       
+  <div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+            <h1>CLASIFICACION</h1>
+            <p>
+              De acuerdo a Ciertas características que  los  Teléfonos Celulares Poseen se clasifican en GAMAS
+            </p>
+          </div>
+          <div data-role="content" align="center">
+            <div>
+               <h2>GAMA ALTA</h2> 
+                </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>IPHONE 7 Plus</h1>
+                  <div> 
+                  <p>Los Telefonos Celulares  con este tipo de gama suelen ser siempre los mejores equipados ,el costo que este tipo de gama presenta en muy elevado ,ya que los equipos son versiones nuevas como el diseño,sistema operativo  etc. EJEMPLO:</p>
+                    <img src="imagenes/telefono8.jpg" width="310" height="310">
+                    
+                </div>
+              </div>
+              <div>
+               <h2>GAMA MEDIA</h2> 
+                </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>Huawei P8</h1>
+                  <div>
+                  <p>Los Telefonos Celulares  con este tipo de gama suelen ser mejores en algunas cosas ,el costo que este tipo de gama presenta en regular no muy caro pero tampoco no muy barato ,su diseño es agradabla  y su sistema operativo  es amigable EJEMPLO: </p> 
+                    <img src="imagenes/telefono15.jpg" width="310" height="310">
+                </div>
+              </div>
+              <div>
+               <h2>GAMA BAJA</h2> 
+                </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>Samsung Galaxy Young</h1>
+                  <div> 
+                  <p>Los Telefonos Celulares  con este tipo de gama no suelen hacer lo mismo como los de Gama alta pero tampoco se quedan atras ,el costo que este tipo de gama presenta es bajo ,el diseño es un poco agradable  para ciertas personas EJEMPLO:</p>
+                    <img src="imagenes/telefono14.jpg" width="310" height="310">
+                </div>
+              </div>
+          <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>Aplicacion DOS UMA</h4>
+          </div>
+        </div>
+  </div>
+       
+  <div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+            <h1>COMPAÑIAS</h1>
+          </div>
+          <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+                <h1>TELCEL</h1>       
+                  <div>
+                    <img src="imagenes/compania1.jpg" width="310" height="310">
+                  </div>
+                  <a href="http://www.telcel.com/">Telcel.com</a>
+              </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>AT&T </h1>
+                  <div>
+                    <img src="imagenes/compania2.jpg" width="310" height="310">
+                  </div>
+                  <a href="https://www.att.com.mx/index.html?gclid=CJu5-9ry_tICFYi2wAodN8QLPQ&gclsrc=aw.ds">at&t.com</a>
+              </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>UNEFON</h1>
+                  <div> <img src="imagenes/compania3.png" width="310" height="310">
+                  </div>
+                  <a href="https://www.unefon.com.mx/">Unefon.com</a>
+              </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>IUSACELL</h1>
+                  <div>
+                    <img src="imagenes/compania4.png" width="310" height="310">
+                    
+                  </div>
+                  <a href="https://www.att.com.mx/index.html?gclid=CJu5-9ry_tICFYi2wAodN8QLPQ&gclsrc=aw.ds">Iusacell.com</a>
+              </div> 
+                </div>
+              </div>
+          </div>
+          <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>Aplicacion DOS UMA</h4>
+          </div>
+  </div>
+       </div>
+       
+  <div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
+            <h1>TELEFONOS DEL FUTURO</h1>
+            <p> Los siguientes Telefonos celulares  son prototipos</p> 
+          </div>
+          <div data-role="content" align="center">
+            <div data-role="collapsible" data-content-theme="false">
+                <h1>LGZ</h1>
+                <p>
+                   El nuevo Smartphone de LG ,el LGZ es destacado por su flexibiliodad ,La pantalla de este dispositivo es concava parecida a la de una pantalla OLED curva de TV.
+                </p>
+                  <div>
+                    <img src="imagenes/futuro6.jpg" width="310" height="310">
+                  </div>
+              </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>Proyecto Ara Google</h1>
+                <p>
+                  Proyecto Ara es el nombre en clave de una iniciativa de Google que tiene como objetivo desarrollar una plataforma de hardware libre para la creación de los teléfonos inteligentes modulares. La plataforma incluirá un marco estructural con módulos de teléfonos inteligentes a elección del propietario, tales como una pantalla, un teclado o una batería adicional. Esto permitiría a los usuarios cambiar módulos que no funcionen o actualizar módulos individuales a medida que las innovaciones vayan surgiendo, proporcionando ciclos de vida mucho más largos y reduciendo la contaminación producida por basura electrónica.
+                </p>
+                  <div>
+                    <img src="imagenes/futuro7.jpg" width="310" height="310">
+                  </div>
+              </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>pantalla flexible samsung</h1>
+                  <p>
+                    Samsung ha hecho de la pantalla curva el sello distintivo en sus teléfonos Galaxy de gama alta pero el próximo año la compañía podría llevar la idea aún más lejos. Según varios analistas del mercado de la telefonía consultados por Bloomberg, la empresa coreana está lista para incorporar pantallas flexibles en dos modelos de teléfono. Con ellas será posible plegar el terminal para que ocupe menos espacio o desplegarlo cuando se quiera navegar por la web en una pantalla de mayor tamaño
+                  </p>
+                  <div>
+                    <img src="imagenes/futuro8.jpg" width="310" height="310">
+                  </div>
+              </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>triple display flip phone</h1>
+                <p> Es un teléfono de triple pantalla de ejecución de acciones Android que aparece como una tienda de campaña, se desploma en una pizarra curvada, y se despliega como un pequeño libro</p>
+                  <div>
+                    <img src="imagenes/futuro9.jpg" width="310" height="310">
+                  </div>
+              </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>Aplicacion DOS UMA</h4>
+          </div>
+        </div>
+  </div>
+       
+       
+</body>
+</html>
